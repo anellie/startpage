@@ -38,8 +38,18 @@ ul {
 
 li {
   font-size: 12pt;
-  padding: 10px 0px;
+  padding: 10px 0;
   list-style: none;
+}
+
+.deprecated {
+  font-size: 8pt;
+  color: #666;
+  padding: 0 0 10px;
+}
+
+.deprecated a {
+  color: #666;
 }
 
 footer {
