@@ -59,15 +59,34 @@
     </main>
 
     <footer>
-        <p>Contact me:</p>
-        <p class="footer-links">
-            <a href="mailto:me@angm.xyz">E-Mail</a> |
-            <a href=https://matrix.to/#/@felix:angm.xyz>matrix.angm.xyz</a> |
-            <a class="discord">Discord <span class="dc-child">ellie#0331</span></a> |
-            <a href="https://git.angm.xyz/felix">GitLab</a> |
-            <a href="https://github.com/fangerm">GitHub</a>
-        </p>
+        <span class="modeswitch" onclick="toggleMode();">Light Mode</span>
+        <div class="contact">
+            <p>Contact me:</p>
+            <p class="footer-links">
+                <a href="mailto:me@angm.xyz">E-Mail</a> |
+                <a href=https://matrix.to/#/@felix:angm.xyz>matrix.angm.xyz</a> |
+                <a class="discord">Discord <span class="dc-child">ellie#0331</span></a> |
+                <a href="https://git.angm.xyz/felix">GitLab</a> |
+                <a href="https://github.com/fangerm">GitHub</a>
+            </p>
+        </div>
     </footer>
+
+    <script type="text/javascript">
+        const cssId = 'light-css';
+        let head = document.getElementsByTagName('head')[0];
+        let link = document.createElement('link');
+        link.id = cssId;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/light.css';
+        link.media = 'all';
+
+        function toggleMode() {
+            if (!document.getElementById(cssId)) head.appendChild(link);
+            else head.removeChild(link);
+        }
+    </script>
 </body>
 
 </html>

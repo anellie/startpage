@@ -1,11 +1,11 @@
 body {
-  background-color: #FFF;
+  background-color: #222;
   font-family: 'Titillium Web', sans-serif;
-  color: #333;
+  color: #EEE;
 }
 
 a {
-  color: #229;
+  color: #66C;
 }
 
 a span {
@@ -42,24 +42,21 @@ li {
   list-style: none;
 }
 
-.deprecated {
-  font-size: 8pt;
-  color: #666;
-  padding: 0 0 10px;
+.modeswitch, .contact {
+  color: #AAA;
+  bottom: 5px;
+  position: fixed;
 }
 
-.deprecated a {
-  color: #666;
+.modeswitch {
+  left: 5px;
 }
 
-footer {
-  color: #555;
-  bottom: 10px;
+.contact {
   right: 5px;
-  position: absolute;
 }
 
-footer p {
+.contact p {
   padding: 0;
   margin: 0;
 }

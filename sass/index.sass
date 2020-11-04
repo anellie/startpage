@@ -1,12 +1,12 @@
 @import 'colors'
 
 body
-    background-color: $background
+    background-color: $bg-dark
     font-family: 'Titillium Web', sans-serif;
-    color: $text-color
+    color: $text-dark
 
 a
-    color: $link
+    color: $link-dark
 
     span
         display: none
@@ -36,11 +36,17 @@ li
     padding: 10px 0
     list-style: none
 
-footer
-    color: $footer-text
-    bottom: 10px
-    right: 5px
+.modeswitch, .contact
+    color: $footer-dark
+    bottom: 5px
     position: fixed
+
+
+.modeswitch
+    left: 5px
+
+.contact
+    right: 5px
 
     p
         padding: 0
