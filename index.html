@@ -68,7 +68,6 @@
     </main>
 
     <footer>
-        <span class="modeswitch" onclick="toggleMode();">Toggle Light Mode</span>
         <div class="contact">
             <p>Contact me:</p>
             <p class="footer-links">
@@ -80,22 +79,6 @@
             </p>
         </div>
     </footer>
-
-    <script>
-        const cssId = 'light-css';
-        let head = document.getElementsByTagName('head')[0];
-        let link = document.createElement('link');
-        link.id = cssId;
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'css/light.css';
-        link.media = 'all';
-
-        function toggleMode() {
-            if (!document.getElementById(cssId)) head.appendChild(link);
-            else head.removeChild(link);
-        }
-    </script>
 
      <noscript><img src="https://shynet.angm.xyz/ingress/116dff44-c14f-43f4-a2df-43c42e837d36/pixel.gif"></noscript>
      <script defer src="https://shynet.angm.xyz/ingress/116dff44-c14f-43f4-a2df-43c42e837d36/script.js"></script> 
